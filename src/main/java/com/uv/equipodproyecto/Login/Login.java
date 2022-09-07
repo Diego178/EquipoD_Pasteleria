@@ -34,7 +34,7 @@ public class Login extends BorderPane {
         this.organizacion = new BorderPane();
         this.formulario = new GridPane();
         this.iniciar = new Button("Iniciar sesion");
-        Image login = new Image(this.getClass().getResource("LogoP.png").openStream());
+        Image login = new Image("file:LogoP.png");
         ImageView imagen = new ImageView(login);
         imagen.setFitWidth(450.0);
         imagen.setFitHeight(500.0);
@@ -55,7 +55,7 @@ public class Login extends BorderPane {
         this.lContra = new Label("Contraseña: ");
         this.lContra.getStyleClass().add("label");
 
-        Image iUser= new Image(this.getClass().getResource("User.png").openStream());
+        Image iUser= new Image("file:User.png");
         ImageView iuser = new ImageView(iUser);
         iuser.setFitWidth(150.0);
         iuser.setFitHeight(150.0);
